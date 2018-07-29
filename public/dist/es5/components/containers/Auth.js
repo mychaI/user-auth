@@ -14,31 +14,82 @@ var React = _interopRequire(_react);
 
 var Component = _react.Component;
 var Auth = (function (Component) {
-		function Auth() {
-				_classCallCheck(this, Auth);
+	function Auth() {
+		_classCallCheck(this, Auth);
 
-				if (Component != null) {
-						Component.apply(this, arguments);
-				}
+		if (Component != null) {
+			Component.apply(this, arguments);
 		}
+	}
 
-		_inherits(Auth, Component);
+	_inherits(Auth, Component);
 
-		_prototypeProperties(Auth, null, {
-				render: {
-						value: function render() {
-								return React.createElement(
-										"div",
+	_prototypeProperties(Auth, null, {
+		render: {
+			value: function render() {
+				return React.createElement(
+					"div",
+					null,
+					React.createElement(
+						"div",
+						{ className: "container" },
+						React.createElement(
+							"div",
+							{ className: "row" },
+							React.createElement(
+								"div",
+								{ className: "col-md-6" },
+								React.createElement(
+									"h1",
+									null,
+									"Register"
+								),
+								React.createElement(
+									"form",
+									null,
+									React.createElement("input", { type: "text", placeholder: "Username" }),
+									React.createElement("br", null),
+									React.createElement("input", { type: "text", placeholder: "Password" }),
+									React.createElement("br", null),
+									React.createElement(
+										"button",
 										null,
-										"This is the Auth component"
-								);
-						},
-						writable: true,
-						configurable: true
-				}
-		});
+										"Join"
+									)
+								)
+							),
+							React.createElement(
+								"div",
+								{ className: "container" },
+								React.createElement(
+									"h1",
+									null,
+									"Login"
+								),
+								React.createElement(
+									"form",
+									null,
+									React.createElement("input", { type: "text", placeholder: "Username" }),
+									React.createElement("br", null),
+									React.createElement("input", { type: "text", placeholder: "Password" }),
+									React.createElement("br", null),
+									React.createElement(
+										"button",
+										null,
+										"Join"
+									)
+								)
+							)
+						)
+					)
+				);
+			},
+			writable: true,
+			configurable: true
+		}
+	});
 
-		return Auth;
+	return Auth;
 })(Component);
 
 module.exports = Auth;
