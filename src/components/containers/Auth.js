@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { HTTP } from '../../utils'
 
 class Auth extends Component {
   constructor() {

@@ -73,10 +73,13 @@ module.exports = {
 					presets:['react', 'env']
 				}
 			},
-			{
+/*	
+ *	json-loader not needed in webpack > v2.0
+ *			{
 				test: /\.json$/,
 				loader: 'json-loader'
 			},
+*/
 			{
 				test: /\.(jpg|png|svg)$/,
 				loader: 'file-loader',
