@@ -4,6 +4,7 @@ import renderComponents from './renderComponents'
 
 export {
 
+	HTTP,
 	TurboClient,
 	ServerEntry,
 	renderComponents

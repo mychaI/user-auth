@@ -9,6 +9,11 @@ import { TurboClient } from '../utils'
 
 export default {
 
+  
+
+
+/* Default actions created by Turbo 
+ *
 	fetchUsers: (params) => {
 		return dispatch => {
 			return dispatch(TurboClient.getRequest('user', params, constants.USERS_RECEIVED))
@@ -41,4 +46,8 @@ export default {
 		}
 	}
 	
+*/
+
+
+
 }
