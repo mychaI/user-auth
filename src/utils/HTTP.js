@@ -3,7 +3,7 @@ import superagent from 'superagent'
 export default {
 
   post: (endpoint, body) => {
-	return new Promise(() => {
+	return new Promise((resolve, reject) => {
 	  superagent
 		.post(endpoint)
 		.send(body)
@@ -19,7 +19,7 @@ export default {
   },
 
   get: (endpoint, params) => {
-	return new Promise(() => {
+	return new Promise((resolve, reject) => {
 	  superagent
 		.get(endpoint)
 		.query(params)

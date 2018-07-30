@@ -23,7 +23,15 @@ class Auth extends Component {
 
   register(event) {
 	event.preventDefault()
-	console.log('Register: ' + JSON.stringify(this.state.visitor))
+
+	HTTP.get('/auth/test', null)
+	.then(data => {
+	  console.log('GET :' + JSON.stringify(data))
+	})
+	.catch(err => {
+	  console.log('ERROR: ' + err.message)
+	})
+
   }
 
   login(event) {
