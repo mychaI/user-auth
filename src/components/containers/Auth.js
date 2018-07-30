@@ -24,9 +24,9 @@ class Auth extends Component {
   register(event) {
 	event.preventDefault()
 
-	HTTP.get('/auth/test', null)
+	HTTP.post('/auth/register', this.state.visitor)
 	.then(data => {
-	  console.log('GET :' + JSON.stringify(data))
+	  console.log('RESPONSE:' + JSON.stringify(data))
 	})
 	.catch(err => {
 	  console.log('ERROR: ' + err.message)
@@ -36,7 +36,15 @@ class Auth extends Component {
 
   login(event) {
 	event.preventDefault()
-	console.log('Login: ' + JSON.stringify(this.state.visitor))
+	HTTP
+	.post('/auth/login', this.state.visitor)
+	.then(data => {
+	  console.log('RESPONSE: ' + JSON.stringify(data))
+	})
+	.catch(err => {
+	  console.log('ERROR: ' + err.message)
+	})
+
   }
 
 

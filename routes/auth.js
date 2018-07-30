@@ -12,4 +12,18 @@ router.get('/test', (req, res) => {
   })
 })
 
+router.post('/register', (req, res) => {
+  res.json({
+	confirmation: 'success',
+	data: req.body
+  })
+})
+
+router.post('/login', (req, res) => {
+  res.json({
+	confirmation: 'success',
+	data: req.body
+  })
+})
+
 module.exports = router
